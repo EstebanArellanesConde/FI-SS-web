@@ -1,9 +1,27 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    padding: 3vw;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+}
+
+/* Esto mantendrá las tarjetas y el contenido en una columna, pero con un título centrado */
+h1 {
+    text-align: center;  /* Asegura que el título esté centrado */
+    margin-bottom: 20px;  /* Da un pequeño margen debajo del título */
+}
+
 /* Estilos generales de las tarjetas */
 .cards-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 1200px; /* Puedes ajustar esto según el tamaño que quieras */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    margin: 0 auto; /* Centra las tarjetas dentro del contenedor */
 }
 
 /* Estilo de cada tarjeta */
@@ -54,4 +72,31 @@
 
 .card p a:hover {
     text-decoration: underline;
+}
+
+/* Justificar el contenido en la tarjeta de "Valores" */
+.valores-card {
+    text-align: left; /* Justifica el texto dentro de la tarjeta */
+}
+
+/* Estilo de las listas dentro de la tarjeta de "Valores" */
+.valores-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.valores-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.valores-card ul {
+    padding-left: 20px; /* Mantén el padding izquierdo para los puntos */
+}
+
+.valores-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px; /* Aumenta el margen entre los elementos de la lista */
 }

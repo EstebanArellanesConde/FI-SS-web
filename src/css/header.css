@@ -16,8 +16,8 @@ body {
 /* Encabezado de la página */
 header {
     width: 100%;
-    background-color: #F2F2F2; 
-    padding: 1rem 0;
+    background-color: #ad3232; 
+    padding: 2rem 0;
 }
 
 .encabezado-escudos {
@@ -51,7 +51,7 @@ header {
 
 .titulo-header{
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
