@@ -21,21 +21,16 @@ body {
     background: linear-gradient(to bottom, #F2F2F2, rgba(242, 242, 242, 0));
     /* border-top: 2.5px #cd171e solid;
     border-bottom: 2.5px #cd171e solid; */
-    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
 }
 
-.navbar-scrolled {
-    background-color: #193c6b; /* Color al hacer scroll */
-    display: block;
+.escudo-die{
+    width: 140px;
+    height: 85px;
+    margin-top: 9px;
 }
 
 .nav-list {
@@ -53,7 +48,7 @@ body {
 }
 
 .logo-container img {
-    max-height: 75px;
+    max-height: 100px;
     margin-right: 1rem;
 }
 
@@ -70,15 +65,16 @@ body {
 }
 
 .nav-link:hover {
-    background-color: rgba(229, 231, 235, 0.1);
+    background-color: #e5e7eb;
 }
 
 .dropdown {
     display: none;
     position: absolute;
+    background-color: #fff;
     padding: 0;
     margin: 0;
-    background-color: rgba(242, 242, 242, 0.8);
+    background-color: #F2F2F2;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 3;
     min-width: 200px;
@@ -99,7 +95,7 @@ body {
 }
 
 .dropdown-link:hover {
-    background-color: rgba(229, 231, 235, 0.1);
+    background-color: #e5e7eb;
 }
 
 .nav-item:hover > .dropdown,
@@ -118,7 +114,7 @@ body {
     display: none;
 }
 
-/* Para pantallas pequeñas */
+/* Para pantallas pequeÃ±as */
 @media (max-width: 768px) {
     .navbar {
         display: block;
@@ -171,7 +167,7 @@ body {
         padding: 1rem;
     }
 
-    /* Mostrar submenú cuando el enlace tiene focus o es clicado */
+    /* Mostrar submenÃº cuando el enlace tiene focus o es clicado */
     .nav-item .nav-link:focus + .dropdown, 
     .nav-item .nav-link:active + .dropdown {
         display: block;

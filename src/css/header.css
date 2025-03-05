@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
 }
 
-.izquierda{/* Alineación para los escudos de lado izquierdp*/
+.izquierda{/* Alineación para los escudos de lado izquierdo*/
     display: flex;
     gap: 1rem;
 }
@@ -51,7 +51,7 @@ header {
 
 .titulo-header{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 @media (max-width: 768px) {
