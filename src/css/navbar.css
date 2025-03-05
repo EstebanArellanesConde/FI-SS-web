@@ -114,7 +114,7 @@ body {
     display: none;
 }
 
-/* Para pantallas pequeÃ±as */
+/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .navbar {
         display: block;
@@ -167,7 +167,7 @@ body {
         padding: 1rem;
     }
 
-    /* Mostrar submenÃº cuando el enlace tiene focus o es clicado */
+    /* Mostrar submenú cuando el enlace tiene focus o es clicado */
     .nav-item .nav-link:focus + .dropdown, 
     .nav-item .nav-link:active + .dropdown {
         display: block;
